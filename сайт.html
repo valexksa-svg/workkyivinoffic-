@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Робота у офісі Київ | Висока заробітна плата | Кар'єрні можливості</title>
+    <meta name="description" content="Робота в офісі Київ з навчанням іноземних мов! Безкоштовне навчання словацької/польської/чеської з гарантованим працевлаштуванням. ЗП до 3500$. Житло іногороднім.">
+    <meta name="keywords" content="робота Київ, офісна робота, навчання мов, словацька мова, польська мова, чеська мова, гарантоване працевлаштування, менеджер консультант, Берестейська, житло іногороднім">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .floating-shapes {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .shape {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .shape:nth-child(1) {
+            width: 80px;
+            height: 80px;
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .shape:nth-child(2) {
+            width: 120px;
+            height: 120px;
+            top: 60%;
+            left: 80%;
+            animation-delay: 2s;
+        }
+
+        .shape:nth-child(3) {
+            width: 60px;
+            height: 60px;
+            top: 80%;
+            left: 20%;
+            animation-delay: 4s;
+        }
+
+        .shape:nth-child(4) {
+            width: 100px;
+            height: 100px;
+            top: 30%;
+            right: 10%;
+            animation-delay: 1s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.5; }
+            50% { transform: translateY(-20px) rotate(180deg); opacity: 0.8; }
+        }
+
+        header {
+            position: relative;
+            z-index: 10;
+            padding: 2rem 0;
+            text-align: center;
+            color: white;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            animation: slideDown 1s ease-out;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            animation: slideDown 1s ease-out 0.3s both;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .main-content {
+            position: relative;
+            z-index: 10;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 3rem 2rem;
+            margin: 2rem 0;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-section {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .hero-title {
+            color: #333;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-description {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .benefit-card {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            padding: 2rem;
+            border-radius: 15px;
+            color: white;
+            text-align: center;
+            transform: translateY(0);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .benefit-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .contact-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 3rem;
+            align-items: start;
+        }
+
+        .contact-form {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-title {
+            color: #333;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            color: #555;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .telegram-section {
+            background: linear-gradient(135deg, #0088cc, #0066aa);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .telegram-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .telegram-description {
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .telegram-btn {
+            background: #ffffff;
+            color: #0088cc;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .telegram-btn:hover {
+            background: #f0f0f0;
+            transform: translateY(-2px);
+        }
+
+        .conditions-section {
+            background: #e8f4f8;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 3rem 0;
+        }
+
+        .conditions-title {
+            color: #333;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .conditions-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .condition-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #667eea;
+        }
+
+        .condition-item h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .condition-item p {
+            color: #666;
+        }
+
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        @media (max-width: 768px) {
+            .contact-section {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .logo {
+                font-size: 2rem;
+            }
+            
+            .main-content {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">💼 KyivOfficeJobs</h1>
+            <p class="subtitle">Престижна робота в серці столиці</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="main-content">
+            <section class="hero-section">
+                <h2 class="hero-title">Знайдіть роботу мрії в офісі Києва</h2>
+                <p class="hero-description">
+                    Приєднуйтесь до провідних компаній столиці! Ми пропонуємо найкращі вакансії 
+                    з високою заробітною платою та відмінними умовами праці в центрі Києва.
+                    <strong>Ідеально підходить для студентів - гнучкий графік та можливість поєднання з навчанням!</strong>
+                </p>
+                
+                <!-- Новий блок з навчанням -->
+                <div style="background: linear-gradient(135deg, #ff6b6b, #ee5a24); color: white; padding: 2rem; border-radius: 15px; margin: 2rem 0; box-shadow: 0 10px 30px rgba(238, 90, 36, 0.3);">
+                    <h3 style="font-size: 1.8rem; margin-bottom: 1rem; text-align: center;">
+                        🎓 Пропонуємо навчання з гарантованим працевлаштуванням!
+                    </h3>
+                    <p style="font-size: 1.1rem; text-align: center; margin-bottom: 1.5rem;">
+                        Відкриваємо набір на групи для вивчення <strong>словацької / польської / чеської мови</strong> 
+                        для подальшого влаштування на посаду "менеджер з надання консультативних послуг"
+                    </p>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem;">
+                        <div style="text-align: center; padding: 1rem; background: rgba(255,255,255,0.1); border-radius: 10px;">
+                            <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">💰</div>
+                            <strong>Під час навчання:</strong><br>
+                            12,000 грн/місяць + оплата репетитора
+                        </div>
+                        <div style="text-align: center; padding: 1rem; background: rgba(255,255,255,0.1); border-radius: 10px;">
+                            <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🚀</div>
+                            <strong>Після навчання:</strong><br>
+                            від 48,000 грн + премії та бонуси
+                        </div>
+                        <div style="text-align: center; padding: 1rem; background: rgba(255,255,255,0.1); border-radius: 10px;">
+                            <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">💵</div>
+                            <strong>Середня ЗП:</strong><br>
+                            від 3,500$ в місяць
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="benefits-grid">
+                <div class="benefit-card">
+                    <span class="benefit-icon">💰</span>
+                    <h3 class="benefit-title">Висока зарплата</h3>
+                    <p>Від 25,000 до 80,000+ грн/міс залежно від досвіду та позиції</p>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-icon">🏢</span>
+                    <h3 class="benefit-title">Престижний офіс</h3>
+                    <p>Сучасні офіси в бізнес-центрах у центрі Києва з усіма зручностями</p>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-icon">🚀</span>
+                    <h3 class="benefit-title">Кар'єрне зростання</h3>
+                    <p>Швидкий професійний розвиток та можливості підвищення</p>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-icon">🎓</span>
+                    <h3 class="benefit-title">Для студентів</h3>
+                    <p>Ідеально підходить для студентів! Гнучкий графік, можливість поєднання з навчанням</p>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-icon">🌍</span>
+                    <h3 class="benefit-title">Безкоштовне навчання</h3>
+                    <p>Вивчення іноземних мов (словацька/польська/чеська) за рахунок компанії</p>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-icon">🏠</span>
+                    <h3 class="benefit-title">Житло іногороднім</h3>
+                    <p>Оплачуємо оренду житла в Києві на період навчання для іногородніх</p>
+                </div>
+            </section>
+
+            <section class="conditions-section">
+                <h2 class="conditions-title pulse-animation">Умови роботи</h2>
+                <div class="conditions-list">
+                    <div class="condition-item">
+                        <h3>📅 Графік роботи</h3>
+                        <p>Пн-Пт, 10:00-19:00<br>Офіс біля м.Берестейська, Київ</p>
+                    </div>
+                    <div class="condition-item">
+                        <h3>🎯 Позиції</h3>
+                        <p>Менеджер з надання консультативних послуг, аналітики, консультанти</p>
+                    </div>
+                    <div class="condition-item">
+                        <h3>📊 Досвід</h3>
+                        <p>Розглядаємо кандидатів як з досвідом, так і без досвіду роботи</p>
+                    </div>
+                    <div class="condition-item">
+                        <h3>🎓 Для студентів</h3>
+                        <p>Спеціальні умови для студентів: гнучкий графік, підробіток, стажування</p>
+                    </div>
+                    <div class="condition-item">
+                        <h3>📚 Освіта</h3>
+                        <p>Вища освіта бажана, але не обов'язкова. Студенти вітаються!</p>
+                    </div>
+                    <div class="condition-item">
+                        <h3>💊 Соцпакет</h3>
+                        <p>Медична страховка, оплачувані відпустки, бонуси, аванси, розіграші</p>
+                    </div>
+                    <div class="condition-item">
+                        <h3>🌍 Функціонал</h3>
+                        <p>Консультування клієнтів, робота з CRM, інвестиційні платформи (Binance, ByBit)</p>
+                    </div>
+                    <div class="condition-item">
+                        <h3>🍕 Корпоратив</h3>
+                        <p>Командні заходи, навчання, корпоративи, комфортне робоче середовище</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-section">
+                <div class="contact-form">
+                    <h2 class="form-title">Подати заявку на роботу</h2>
+                    <form id="jobForm" name="job-application" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                        <!-- Скрите поле для захисту від ботів -->
+                        <input type="hidden" name="form-name" value="job-application">
+                        <div style="display: none;">
+                            <label>Не заповнюйте це поле: <input name="bot-field" /></label>
+                        </div>
+                        <div class="form-group">
+                            <label for="fullName">Повне ім'я*</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон*</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="position">Бажана позиція</label>
+                            <select id="position" name="position">
+                                <option value="">Оберіть позицію</option>
+                                <option value="manager-consultant">Менеджер з надання консультативних послуг</option>
+                                <option value="training-program">Навчальна програма (словацька/польська/чеська)</option>
+                                <option value="manager">Менеджер</option>
+                                <option value="analyst">Аналітик</option>
+                                <option value="consultant">Консультант</option>
+                                <option value="administrator">Адміністратор</option>
+                                <option value="student-job">Підробіток для студента</option>
+                                <option value="intern">Стажування</option>
+                                <option value="other">Інша</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="languages">Зацікавлені у вивченні мов? (необов'язково)</label>
+                            <select id="languages" name="languages">
+                                <option value="">Оберіть мову</option>
+                                <option value="slovak">Словацька мова</option>
+                                <option value="polish">Польська мова</option>
+                                <option value="czech">Чеська мова</option>
+                                <option value="not-interested">Не зацікавлений</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="housing">Потрібна допомога з житлом? (для іногородніх)</label>
+                            <select id="housing" name="housing">
+                                <option value="">Оберіть варіант</option>
+                                <option value="yes">Так, потрібна допомога з житлом</option>
+                                <option value="no">Ні, проживаю в Києві</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="experience">Опис досвіду (необов'язково)</label>
+                            <textarea id="experience" name="experience" rows="4" placeholder="Розкажіть коротко про свій досвід роботи..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Відправити заявку</button>
+                    </form>
+                </div>
+
+                <div class="telegram-section">
+                    <h2 class="telegram-title">💬 Швидкий зв'язок у Telegram</h2>
+                    <p class="telegram-description">
+                        Отримайте відповідь протягом години! Наш HR-менеджер швидко розгляне вашу кандидатуру 
+                        та надасть детальну інформацію про вакансії та навчальні програми.
+                    </p>
+                    <a href="https://t.me/stviluu" class="telegram-btn" target="_blank">
+                        📱 Написати в Telegram
+                    </a>
+                    <div style="margin-top: 1.5rem; font-size: 0.9rem; opacity: 0.8;">
+                        <p>⚡ Відповідь протягом 1 години</p>
+                        <p>📋 Детальна консультація про навчання</p>
+                        <p>🤝 Індивідуальний підхід</p>
+                        <p>🌍 Інформація про вивчення мов</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        // Анімація форми з Netlify обробкою
+        document.getElementById('jobForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.querySelector('.submit-btn');
+            const originalText = submitBtn.textContent;
+            const form = this;
+            
+            submitBtn.textContent = 'Відправляється...';
+            submitBtn.disabled = true;
+            submitBtn.style.background = '#6c757d';
+            
+            // Відправка через fetch до Netlify
+            const formData = new FormData(form);
+            
+            fetch('/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams(formData).toString()
+            })
+            .then(response => {
+                if (response.ok) {
+                    submitBtn.textContent = '✅ Заявку відправлено!';
+                    submitBtn.style.background = 'linear-gradient(135deg, #28a745, #20c997)';
+                    form.reset();
+                    
+                    // Показати повідомлення про успіх
+                    const successMessage = document.createElement('div');
+                    successMessage.innerHTML = `
+                        <div style="background: #d4edda; color: #155724; padding: 15px; border-radius: 8px; margin-top: 15px; border: 1px solid #c3e6cb;">
+                            <strong>Дякуємо за вашу заявку!</strong><br>
+                            Ми зв'яжемося з вами найближчим часом. Також можете написати нам в 
+                            <a href="https://t.me/stviluu" target="_blank" style="color: #0088cc;">Telegram</a> 
+                            для швидшого зв'язку.
+                        </div>
+                    `;
+                    form.parentNode.appendChild(successMessage);
+                    
+                    // Прибрати повідомлення через 10 секунд
+                    setTimeout(() => {
+                        successMessage.remove();
+                    }, 10000);
+                } else {
+                    throw new Error('Network response was not ok');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                submitBtn.textContent = '❌ Помилка відправки';
+                submitBtn.style.background = 'linear-gradient(135deg, #dc3545, #c82333)';
+                
+                // Показати повідомлення про помилку
+                const errorMessage = document.createElement('div');
+                errorMessage.innerHTML = `
+                    <div style="background: #f8d7da; color: #721c24; padding: 15px; border-radius: 8px; margin-top: 15px; border: 1px solid #f5c6cb;">
+                        <strong>Сталася помилка!</strong><br>
+                        Спробуйте ще раз або напишіть нам в 
+                        <a href="https://t.me/stviluu" target="_blank" style="color: #0088cc;">Telegram</a>
+                    </div>
+                `;
+                form.parentNode.appendChild(errorMessage);
+                
+                setTimeout(() => {
+                    errorMessage.remove();
+                }, 8000);
+            })
+            .finally(() => {
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                    submitBtn.style.background = 'linear-gradient(135deg, #667eea, #764ba2)';
+                }, 3000);
+            });
+        });
+
+        // Анімація при скролі
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.8s ease-out forwards';
+                }
+            });
+        }, observerOptions);
+
+        // Спостереження за елементами
+        document.querySelectorAll('.benefit-card, .condition-item').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Додавання інтерактивності до карток переваг
+        document.querySelectorAll('.benefit-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Плавна поява елементів при завантаженні
+        window.addEventListener('load', () => {
+            document.body.style.opacity = '1';
+        });
+
+        // Додаткова анімація для floating shapes
+        const shapes = document.querySelectorAll('.shape');
+        shapes.forEach((shape, index) => {
+            setInterval(() => {
+                const randomX = Math.random() * 20 - 10;
+                const randomY = Math.random() * 20 - 10;
+                shape.style.transform += ` translate(${randomX}px, ${randomY}px)`;
+            }, 3000 + index * 500);
+        });
+    </script>
+</body>
+</html>
